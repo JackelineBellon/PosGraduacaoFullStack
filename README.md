@@ -29,3 +29,7 @@ Nas funções independente se ela foi declarada antes ou depois de uma chamada e
 Nas declarações de variaveis globais importante frizar que é possivel utiliza-la em arquivos .js distintos.
 
 Foi apresentado o if e else e switch assim como os laços de repetição, porém não é nada distinto do que já é visto em outras linguagens por isso sem ressalvas.
+
+<b> 2.1 Desafio aulas JS </b>
+
+- Fazer uma função palindromo, ou seja, diz-se de ou frase ou palavra que se pode ler, indiferentemente, da esquerda para a direita ou vice-versa.
