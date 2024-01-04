@@ -56,3 +56,13 @@ Eventos comuns:
 - <b>mousemove:</b> quando o mouse é movimentado sobre o elemento
 
 Para criar elementos dinamicamente podemos utilizar o <b>appendChild, remove e insertBefore</b>
+
+<b>4. Orientação a Objetos JavaScript</b>
+
+Em javaScript qualquer função pode usada para instanciar um objeto utilizando o <new>
+O this em js vai depender muito de como foi chamado, e não de como foi escrito, ou seja, se eu tenho um objeto this dentro de uma function e ela recebe uma funcition de forma externa para calculo, caso eu armaze ela em uma variável e para depois utilizar, caso não tenha paramêtros passa enviar os valores this para a função eu irei perder a referência.
+Existe um recurso para poder contornar isso sem precisar de referencia, sera a <b> .bind </b> e nesse caso sempre sera fixado o objeto this do objeto.
+
+<b>Prototype chain</b> é uma forma de herdar em cadeia a propriedade do objeto, seja dos explicitos ou implicitos até que não haja mais nenhum prototype e retorne nulo
+
+<b>Herança e classes</b> Foi disponibilizado a partir do ES6(ou 2015) facilitando então a orientação a objetos, um pouco diferente do Java eles apresentam as classes de modo publico.
