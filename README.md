@@ -33,3 +33,26 @@ Foi apresentado o if e else e switch assim como os laços de repetição, porém
 <b> 2.1 Desafio aulas JS </b>
 
 - Fazer uma função palindromo, ou seja, diz-se de ou frase ou palavra que se pode ler, indiferentemente, da esquerda para a direita ou vice-versa.
+
+
+<b>3. Interação com DOM</b>
+
+Ele é uma documento estruturado em forma de árvore
+Nesta aula foi apresentado um HTML simples onde é inputado campos para soma e utilizado o id no imput para que seja possivel ser capturado pelo DOM ElementById.
+Uma ressalva importante da aula foi que documento HTML o script deve ser chamado após a execução dos inputs ou ao final antes de fechar o body pois ele é interpretado na ordem em que foram inseridos os elementos.
+Outras formas de utilizar o DOM é o document.querySelector ele pega uma string do tipo seletor especificado, caso tenha mais de um seletor na pagina pode ser utilizado o document.querySelectorAll que devolve em um formato array todos os seletores de mesmo tipo contidos na pagina HTML
+
+O evento stop.Propagation interrompe a propogação do evento no momento que esta.
+Outro evento é o preventDefault, impede que o navegador execute a função padrão, por exemplo, submeter um formulário
+
+Eventos comuns:
+- <b>focus:</b> para dar foco no elemento
+- <b>blur:</b> para tirar o foco
+- <b>input:</b> para inserir valor em um campo texto
+- <b>submit:</b> para submeter o formulário
+- <b>keydown</b> quando uma tecla é pressionada
+- <b>keyup:</b> quando uma tecla é liberada
+- <b>click:</b> quando o botão do mouse é acionado
+- <b>mousemove:</b> quando o mouse é movimentado sobre o elemento
+
+Para criar elementos dinamicamente podemos utilizar o <b>appendChild, remove e insertBefore</b>
