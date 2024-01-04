@@ -56,3 +56,30 @@ Eventos comuns:
 - <b>mousemove:</b> quando o mouse é movimentado sobre o elemento
 
 Para criar elementos dinamicamente podemos utilizar o <b>appendChild, remove e insertBefore</b>
+
+<b>4. Orientação a Objetos JavaScript</b>
+
+Em javaScript qualquer função pode usada para instanciar um objeto utilizando o <new>
+O this em js vai depender muito de como foi chamado, e não de como foi escrito, ou seja, se eu tenho um objeto this dentro de uma function e ela recebe uma funcition de forma externa para calculo, caso eu armaze ela em uma variável e para depois utilizar, caso não tenha paramêtros passa enviar os valores this para a função eu irei perder a referência.
+Existe um recurso para poder contornar isso sem precisar de referencia, sera a <b> .bind </b> e nesse caso sempre sera fixado o objeto this do objeto.
+
+<b>Prototype chain</b> é uma forma de herdar em cadeia a propriedade do objeto, seja dos explicitos ou implicitos até que não haja mais nenhum prototype e retorne nulo
+
+<b>Herança e classes</b> Foi disponibilizado a partir do ES6(ou 2015) facilitando então a orientação a objetos, um pouco diferente do Java eles apresentam as classes de modo publico.
+
+
+<b>5. JavaScript Moderno</b> 
+
+- <b>Let:</b> Pode ter ser valor variavel. Porém diferente do <b>var</b> seu escopo é apenas local, ja o <b>var</b> pode mesmo que for declarado dentro de um determinado bloco.
+- <b>Const:</b> Trata-se de constante e não pode ser modificado posteriormente;
+- <b>Atribuição via desestruturação:</b> Nesse caso posso criar o uma variavel de mesmo tipo, mas dando nome a elas dos quais queira, podendo nesse caso desmembrar um array ou um objeto, podendo utilizar até mesmo em functions.
+- <b>Spread Operator:</b> É uma forma dinâmica de incluir valores em array, objetos ou apenas clona-los.
+- <b>Template Strings:</b> Serve para escrever de forma a substituir ou não variaveis utilizando entre craze e pode ter até mesmo quebra de linha dentro da string não necessitando o \n como na concatenação de string e caracteres especiais.
+
+- <b>Arrow functions:</b> É uma sintaxe para declação de funções mais compacta introduzida no ES6, diferente das functions mesmo que eu armazene em uma variaval a, o this fica disponivel para acessa-lo sem perder a referência, porém não posso utilizar com propertiType. 
+Quando há apenas um paramêtro não é preciso colocar parenteses.
+Quando há um paramêtro é obrigatório abrir e fechar parenteses.
+
+Foi abordado também as iterações de for ...of, foreach, map, filter, sort porém não cabe nenhuma ressalva, pois muito semelhante ao usado no java8
+
+Assim também como a modularização de scripts que é feita para não gerar problemas de declaração de variaveis ou constantes globais, assim como também não ter scripts muito grandes
