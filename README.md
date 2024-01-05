@@ -83,3 +83,16 @@ Quando há um paramêtro é obrigatório abrir e fechar parenteses.
 Foi abordado também as iterações de for ...of, foreach, map, filter, sort porém não cabe nenhuma ressalva, pois muito semelhante ao usado no java8
 
 Assim também como a modularização de scripts que é feita para não gerar problemas de declaração de variaveis ou constantes globais, assim como também não ter scripts muito grandes
+
+<b>6. Aula Requisições Http</b>
+
+Nessa aula foi apresentado a API Fetch que vem sendo utilizada atualmente.
+
+- <b>API Fetch</b>  pode ser executada de forma assíncrona e a resposta é encapsulada em uma Promise
+
+Opções do fetch
+
+- <b> method: </b> GET, POST, PUT, DELETE, HEAD, etc
+- <b> headers: </b> cabeçalhos HTTP
+- <b> body:</b> corpo da requisão (postar dados codificados em json por exemplo)
+
