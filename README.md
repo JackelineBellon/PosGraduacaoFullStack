@@ -96,3 +96,6 @@ Opções do fetch
 - <b> headers: </b> cabeçalhos HTTP
 - <b> body:</b> corpo da requisão (postar dados codificados em json por exemplo)
 
+<b>Async e Await</b>
+
+Uma função async sempre retornará uma promisse, sendo assim podemos utiliza-la na juntamente ao await para obter o resultado da promisse diretamente,  ou seja, por trás, o await assume o valor do .then e do return ja trazendo convertido os valores no resultado.
