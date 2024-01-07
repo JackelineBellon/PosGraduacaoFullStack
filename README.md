@@ -99,3 +99,27 @@ Opções do fetch
 <b>Async e Await</b>
 
 Uma função async sempre retornará uma promisse, sendo assim podemos utiliza-la na juntamente ao await para obter o resultado da promisse diretamente,  ou seja, por trás, o await assume o valor do .then e do return ja trazendo convertido os valores no resultado.
+
+<b>7. Aula Desafio Guiado com Requisições HTTP e CRUD completo</b>
+
+Implementar uma aplicaçaõ compra de cadastro de funcionario no estilo CRUD (create, retrieve, update, delete). usando o Back End fornecido
+
+<b>- Criar</b>
+fech(`http://localhost:3000/employees`,{
+   method: "POST",
+   headers: { "Content-Type": "application/json"},
+   body: JSON.stringify(employee),
+});
+
+<b>- Atualizar</b>
+fech(`http://localhost:3000/employees/${id}`, {
+   method: "PUT",
+   headers: { "Content-Type": "application/json"},
+   body: JSON.stringify(employee),
+});
+
+<b>- Excluir</b>
+fech(`http://localhost:3000/employees/${id}`,{
+   method: "DELETE",
+});
+
