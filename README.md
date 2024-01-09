@@ -125,3 +125,14 @@ fech(`http://localhost:3000/employees/${id}`,{
    method: "DELETE",
 });
 
+
+<h2>Módulo NODE.JS</h2>
+
+<b> 1. Aula Construindo uma API </b>
+
+A API será a my-bank-api, ira simular uma API Bancaria, onde ira controlar as conta com a descrição abaixo
+<b>account</b>
+- id
+- name
+- balance 
+- criação, depósito, saque, saldo e exclusão
