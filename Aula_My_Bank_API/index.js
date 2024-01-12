@@ -7,7 +7,7 @@ const { readFile, writeFile } = fs;
 const app = express();
 app.use(express.json());
 
-app.use("/account", accountRouter);
+app.use("/accounts", accountRouter);
 
 app.listen(3000, async () => {
   try {
