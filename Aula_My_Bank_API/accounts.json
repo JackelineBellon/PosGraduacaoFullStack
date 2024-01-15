@@ -1,15 +1,1 @@
-{
-  "nextId": 4,
-  "accounts": [
-    {
-      "id": 1,
-      "name": "Jackeline Bellon",
-      "balance": 200
-    },
-    {
-      "id": 2,
-      "name": "Guilherme Assis",
-      "balance": 2010.25
-    }
-  ]
-}
+{"nextId":4,"accounts":[{"id":1,"name":"Jackeline Bellon da Silva","balance":5000.25},{"id":2,"name":"Guilherme Assis","balance":2010.25}]}
