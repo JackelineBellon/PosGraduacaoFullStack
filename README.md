@@ -142,3 +142,10 @@ A API será a my-bank-api, ira simular uma API Bancaria, onde ira controlar as c
 <b> 2. Tratamento de erros e gravação de log </b>
 
 Foi utilizado o import Winston para fazer isso de maneira mais eficiente não deixando apenas no console.
+
+<b> 3. Cors</b>
+
+Compartilhamento de recursos de origem cruzada, é uma segurança onde por default somente paginas hospedadas junto a elas podem acessa-las.
+Para liberar para outros, precisaremos inserir os códigos para liberar de forma especifica ou para todos, para que isso ocorra é necessário instalar e importar o cors no seu projeto, onde pode ser liberado de forma global ou apenas alguns endpoints especificos.
+
+A documentação fornece detalhadamente como funciona e as possiveis liberações: https://expressjs.com/en/resources/middleware/cors.html
