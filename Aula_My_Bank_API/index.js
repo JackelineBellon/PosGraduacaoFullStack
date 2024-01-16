@@ -21,7 +21,7 @@ global.logger = winston.createLogger({
 
 const app = express();
 app.use(express.json());
-
+app.use(express.static("public"));
 app.use("/accounts", accountRouter);
 
 app.listen(3000, async () => {
