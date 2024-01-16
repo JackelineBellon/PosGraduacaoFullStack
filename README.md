@@ -138,3 +138,7 @@ A API será a my-bank-api, ira simular uma API Bancaria, onde ira controlar as c
 - criação, depósito, saque, saldo e exclusão
 
 <b>Obs importante: </b> O endPoint put deve atualizar o recurso inteiro enquanto o endPoint patch atualiza parcialmente os dados
+
+<b> 2. Tratamento de erros e gravação de log </b>
+
+Foi utilizado o import Winston para fazer isso de maneira mais eficiente não deixando apenas no console.
