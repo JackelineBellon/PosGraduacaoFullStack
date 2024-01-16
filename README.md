@@ -149,3 +149,11 @@ Compartilhamento de recursos de origem cruzada, é uma segurança onde por defau
 Para liberar para outros, precisaremos inserir os códigos para liberar de forma especifica ou para todos, para que isso ocorra é necessário instalar e importar o cors no seu projeto, onde pode ser liberado de forma global ou apenas alguns endpoints especificos.
 
 A documentação fornece detalhadamente como funciona e as possiveis liberações: https://expressjs.com/en/resources/middleware/cors.html
+
+<b> 4. Documentação</b>
+
+As documentações são muito importantes, pois atraves dela os clientes e as interfaces de terceiros podem consumir as APIs sem a necessidade de ficar perguntando, apenas com base nas documentações. Uma das formas que podemos utilizar será o Swagger que consiste em um arquivo Json que pode ser servido atraves de uma pagina HTML também.
+
+Site: <b>https://editor.swagger.io/</b>
+
+Para instalar no projeto pode utilizar <b>npm install swagger-ui-express</b> pois é essa biblioteca que auxilia a servir da forma que é apresentado no site na sua api.
