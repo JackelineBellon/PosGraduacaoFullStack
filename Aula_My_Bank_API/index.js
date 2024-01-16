@@ -2,6 +2,7 @@ import express, { json } from "express";
 import winston from "winston";
 import accountRouter from "./routes/accounts.js";
 import { promises as fs } from "fs";
+import cors from "cors";
 
 const { readFile, writeFile } = fs;
 global.fileName = "accounts.json";
@@ -21,6 +22,7 @@ global.logger = winston.createLogger({
 
 const app = express();
 app.use(express.json());
+//app.use(cors()); - liberação global de todos os endpoints
 app.use(express.static("public"));
 app.use("/accounts", accountRouter);
 

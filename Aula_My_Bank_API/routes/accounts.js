@@ -33,6 +33,7 @@ router.post("/", async (req, res, next) => {
   }
 });
 
+//cors com liberação local
 router.get("/", cors(), async (req, res, next) => {
   try {
     const data = JSON.parse(await readFile(global.fileName));
