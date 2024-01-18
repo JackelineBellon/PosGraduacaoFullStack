@@ -5,49 +5,45 @@ const { readFile, writeFile } = fs;
 
 const router = express.Router();
 
-router.get("/marcas/maisModelos", async (req, res, next) => {
+router.get("/marcas/maisModelos", async (req, res) => {
   try {
     res.send(ordenarDecrescente(1));
   } catch (err) {
-    next(err);
+    console.log(err);
   }
 });
 
-router.get("/marcas/menosModelos", async (req, res, next) => {
+router.get("/marcas/menosModelos", async (req, res) => {
   try {
     res.send(ordenarCrescente(1));
   } catch (err) {
-    next(err);
+    console.log(err);
   }
 });
 
-router.get("/marcas/maisModelos/:x", async (req, res, next) => {
+router.get("/marcas/maisModelos/:x", async (req, res) => {
   try {
     res.send(ordenarDecrescente(parseInt(req.params.x)));
   } catch (err) {
-    next(err);
+    console.log(err);
   }
 });
 
-router.get("/marcas/menosModelos/:x", async (req, res, next) => {
+router.get("/marcas/menosModelos/:x", async (req, res) => {
   try {
     res.send(ordenarCrescente(parseInt(req.params.x)));
   } catch (err) {
-    next(err);
+    console.log(err);
   }
 });
 
-router.post("/marcas/listaModelos", async (req, res, next) => {
+router.post("/marcas/listaModelos", async (req, res) => {
   try {
-    //função
+    let marca = JSON.stringify(req.body);
+    buscarMarca(marca);
   } catch (err) {
-    next(err);
+    console.log(err);
   }
-});
-
-router.use((err, req, res, next) => {
-  logger.error(`${req.method} ${req.baseUrl} - ${err.message}`);
-  res.status(400).send({ error: err.message });
 });
 
 async function lerJson() {
@@ -113,6 +109,24 @@ async function imprimir(qtdImpressao, listaCarros) {
 
 async function verificarQtdeImpressao(qtdeImprimir, qtdListaCarros) {
   return qtdeImprimir == 0 ? qtdListaCarros : qtdeImprimir;
+}
+
+async function buscarMarca(marca) {
+  try {
+    const listaCarros = await lerJson();
+    const lista = listaCarros.filter((listacarro) => {
+      return (
+        listacarro.brand &&
+        listacarro.brand.toUpperCase() == marca.toUpperCase()
+      );
+    });
+
+    lista.forEach((modelos) => {
+      console.log(modelos.models);
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 export default router;
