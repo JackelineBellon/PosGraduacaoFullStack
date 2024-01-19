@@ -113,16 +113,20 @@ async function verificarQtdeImpressao(qtdeImprimir, qtdListaCarros) {
 
 async function buscarMarca(marca) {
   try {
-    const listaCarros = await lerJson();
-    const lista = listaCarros.filter((listacarro) => {
+    const data = await fs.readFile("car-list.json");
+    const dataJson = JSON.parse(data);
+
+    const lista = dataJson.filter((listacarro) => {
       return (
         listacarro.brand &&
         listacarro.brand.toUpperCase() == marca.toUpperCase()
       );
     });
 
-    lista.forEach((modelos) => {
-      console.log(modelos.models);
+    lista.forEach((carro) => {
+      carro.models.forEach((modelo) => {
+        console.log(`${modelo}`);
+      });
     });
   } catch (err) {
     console.log(err);
