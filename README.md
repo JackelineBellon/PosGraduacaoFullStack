@@ -157,3 +157,24 @@ As documentações são muito importantes, pois atraves dela os clientes e as in
 Site: <b>https://editor.swagger.io/</b>
 
 Para instalar no projeto pode utilizar <b>npm install swagger-ui-express</b> pois é essa biblioteca que auxilia a servir da forma que é apresentado no site na sua api.
+
+<b> 5 . Trabalho prático módulo 1</b>
+
+Dentro do git existirá uma pasta com o nome trabalho_pratico_MD1, onde dentro do mesmo, possui um readme.md com o enunciado, as dificuldades e as lições aprendidas.
+Há a codificação feita por mim e a correção, onde o nome é  composto por um sulfixo seguido de _correcao.
+
+<b> 6. Organização dos projetos</b>
+
+- Baixo acoplamento
+- Reutilização de código
+- Substituição de tecnologia em uma camada
+- Trabalho em equipe
+- Testes unitários
+
+É nessessário a realização dessa organização para atender os tópicos visto que ao desenvolver poderá estar exportando seu código de forma que ele se torne uma lib para outras partes ou outros projetos.
+
+A forma de organizar será
+- <b>Rotas:</b> encaminhamento das requisições.
+- <b>Contoler:</b> validação e resposta das requisições.
+- <b>Service :</b> regras de negócio e/ou reutilização de regras.
+- <b>Repository:</b> persistência de dados.
