@@ -1,4 +1,4 @@
-<h1>Trabalho prático modulo 1</h1>
+﻿<h1>Trabalho prático modulo 1</h1>
 O aluno deverá criar um projeto Node.js para realizar a criação de alguns métodos e processamento de arquivos JSON. Além disso, também será preciso criar alguns endpoints utilizando o Express, que irão chamar os
 métodos criados.
 
@@ -35,7 +35,12 @@ POST, recebendo o parâmetro “nomeMarca” a partir de um objeto JSON no body 
 
 Observação: nos exemplos de rotas dos itens 3 e 4, o X quer dizer o parâmetro que será recebido pela rota.
 
-<h2>Dificuladades encontradas</h2>
+<h3>Dificuladades encontradas</h3>
+A maior diiculdade foi debugar, pois não obtive aptidão para realizar o debug, sendo assim usei por meio o debug diretamente no node.js a partir da chamada da função no index
+Outro ponto de dificuldade foi organizar as funções, para todas eu ja lia o json ordenado, mas acabei com isso fazendo ainda assim uma repetição de código
+E o terceiro ponto de dificuldade foi retornar as funções de modo que pudesse ser impressas no preview do insonmia.
 
-
-<h2>Lições aprendidas</h2>
+<h3>Lições aprendidas</h3>
+No meu código faltou tratar quando não encontrasse marcas, sendo assim isso pode ocasionar erro na API
+Faltou também enviar o retorno para o requisição.
+Faltou tratamento de erro com mensagem para o usuário.
